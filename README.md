@@ -1,4 +1,5 @@
 # IFreePlayLoginSDK
+<<<<<<< HEAD
 
 [![CI Status](http://img.shields.io/travis/zhengyachao/IFreePlayLoginSDK.svg?style=flat)](https://travis-ci.org/zhengyachao/IFreePlayLoginSDK)
 [![Version](https://img.shields.io/cocoapods/v/IFreePlayLoginSDK.svg?style=flat)](http://cocoapods.org/pods/IFreePlayLoginSDK)
@@ -27,3 +28,6 @@ zhengyachao, 15038253754@163.com
 ## License
 
 IFreePlayLoginSDK is available under the MIT license. See the LICENSE file for more info.
+=======
+IFreePlayLoginSDK
+>>>>>>> 51f57821753cc625c8365876662cdfa88e5b186f
