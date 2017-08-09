@@ -1,0 +1,6 @@
+framework module Pods_IFreePlayLoginSDK_Example {
+  umbrella header "Pods-IFreePlayLoginSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

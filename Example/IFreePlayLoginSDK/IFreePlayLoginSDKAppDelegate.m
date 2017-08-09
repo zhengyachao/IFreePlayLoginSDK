@@ -7,12 +7,14 @@
 //
 
 #import "IFreePlayLoginSDKAppDelegate.h"
+#import <IFreePlayLoginSDK/YKSDKManager.h>
 
 @implementation IFreePlayLoginSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[YKSDKManager shareManager] initFaceBookSDKForApplication:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
@@ -41,6 +43,17 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [[YKSDKManager shareManager] application:application
+                                            openURL:url
+                                  sourceApplication:sourceApplication
+                                         annotation:annotation];
 }
 
 @end

@@ -7,9 +7,10 @@
 //
 
 #import "IFreePlayLoginSDKViewController.h"
+#import <IFreePlayLoginSDK/YKSDKManager.h>
 
 @interface IFreePlayLoginSDKViewController ()
-
+@property (weak, nonatomic) IBOutlet UIButton *loginFacebookButton;
 @end
 
 @implementation IFreePlayLoginSDKViewController
@@ -26,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)loginButton:(id)sender {
+    NSLog(@"dkdkdkd");
+    [[YKSDKManager shareManager] logInWithReadPermissions:@[@"public_profile"] fromViewController:self];
+}
 @end
