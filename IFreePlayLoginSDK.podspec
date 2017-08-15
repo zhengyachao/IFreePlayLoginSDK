@@ -10,7 +10,7 @@ TODO:集成facebook登录，并打包成静态库
   s.homepage         = 'https://github.com/zhengyachao/IFreePlayLoginSDK'
   s.license          = 'MIT'
   s.author           = { 'zhengyachao' => '15038253754@163.com' }
-  s.source           = { :git => '/Users/ifreeplay/Desktop/IFreePlayLoginSDK', :tag => '1.0.0' }
+  s.source           = { :git => 'https://github.com/zhengyachao/IFreePlayLoginSDK.git', :tag => '1.0.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
