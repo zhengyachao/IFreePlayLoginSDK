@@ -33,4 +33,14 @@
 /* 退出FaceBook */
 - (void)loginOutFaceBook;
 
+#pragma mark -- 微信登录
+/* WXApi的成员函数，向微信终端程序注册第三方应用 */
+- (void)registerAppForWechat:(NSString *)wxAppid;
+
+/* 处理微信通过URL启动App时传递的数据 */
+- (BOOL)handleOpenURLForWechat:(NSURL *)url;
+
+/* 登录Facebook读取用户权限 */
+- (void)loginWechatAPP:(UIViewController *)vc;
+
 @end

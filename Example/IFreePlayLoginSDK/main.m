@@ -11,7 +11,14 @@
 
 int main(int argc, char * argv[])
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([IFreePlayLoginSDKAppDelegate class]));
+    @try {
+        @autoreleasepool
+        {
+            return UIApplicationMain(argc, argv, nil, NSStringFromClass([IFreePlayLoginSDKAppDelegate class]));
+        }
+    }
+    @catch (NSException* exception)
+    {
+        NSLog(@"Exception=%@\nStack Trace:%@", exception, [exception callStackSymbols]);
     }
 }

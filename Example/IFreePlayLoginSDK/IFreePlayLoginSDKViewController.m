@@ -11,6 +11,7 @@
 
 @interface IFreePlayLoginSDKViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginFacebookButton;
+@property (weak, nonatomic) IBOutlet UIButton *weChatButton;
 @end
 
 @implementation IFreePlayLoginSDKViewController
@@ -31,4 +32,11 @@
     NSLog(@"dkdkdkd");
     [[YKSDKManager shareManager] logInWithReadPermissions:@[@"public_profile"] fromViewController:self];
 }
+
+- (IBAction)loginWechatButton:(UIButton *)sender {
+    
+    [[YKSDKManager shareManager] loginWechatAPP:self];
+}
+    
+    
 @end

@@ -1,7 +1,7 @@
 {
   "name": "IFreePlayLoginSDK",
-  "version": "0.1.0",
-  "summary": "A short description of IFreePlayLoginSDK.",
+  "version": "1.0.0",
+  "summary": "集成facebook登录，并打包成静态库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zhengyachao/IFreePlayLoginSDK",
   "license": "MIT",
@@ -9,19 +9,29 @@
     "zhengyachao": "15038253754@163.com"
   },
   "source": {
-    "git": "https://github.com/zhengyachao/IFreePlayLoginSDK.git",
-    "tag": "0.1.0"
+    "git": "/Users/ifreeplay/Desktop/IFreePlayLoginSDK",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
   "source_files": "IFreePlayLoginSDK/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/YKSDKManager.h",
+  "public_header_files": "IFreePlayLoginSDK/Classes/**/YKSDKManager.h",
+  "vendored_libraries": "IFreePlayLoginSDK/Classes/libWeChatSDK.a",
+  "libraries": [
+    "c++",
+    "sqlite3",
+    "z"
+  ],
   "frameworks": [
     "UIKit",
     "Foundation",
-    "Security"
+    "Security",
+    "CoreTelephony",
+    "SystemConfiguration",
+    "CoreTelephony",
+    "CFNetwork"
   ],
   "dependencies": {
     "FBSDKCoreKit": [
