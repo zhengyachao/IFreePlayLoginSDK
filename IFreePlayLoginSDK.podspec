@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = '集成facebook登录，并打包成静态库'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO:集成facebook登录，并打包成静态库
                        DESC
 
   s.homepage         = 'https://github.com/zhengyachao/IFreePlayLoginSDK'
