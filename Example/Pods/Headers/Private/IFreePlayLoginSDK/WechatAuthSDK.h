@@ -1,0 +1,1 @@
+../../../../../IFreePlayLoginSDK/Classes/WechatAuthSDK.h
