@@ -28,14 +28,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)loginButton:(id)sender {
-    NSLog(@"dkdkdkd");
-    [[YKSDKManager shareManager] logInWithReadPermissions:@[@"public_profile"] fromViewController:self];
+- (IBAction)loginButton:(id)sender
+{
+    [[YKSDKManager shareManager] loginFacebookVC:self GameId:@"3" Type:@"FACEBOOK" success:^(NSDictionary *data) {
+        NSLog(@"打印Facebook的回掉信息  fffff  %@",data);
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (IBAction)loginWechatButton:(UIButton *)sender {
     
-    [[YKSDKManager shareManager] loginWechatAPP:self];
+    [[YKSDKManager shareManager] loginWechatGetUserInfoVc:self
+                                                   GameId:@"1"
+                                                     Type:@"WECHAT"
+                                                  success:^(NSDictionary *data) {
+                                                      NSLog(@"打印微信的回调信息  ---  %@",data);
+                                                  }
+                                                  failure:^(NSError *error) {
+                                                      
+                                                  }];
 }
     
     

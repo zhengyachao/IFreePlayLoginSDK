@@ -16,12 +16,11 @@ TODO:集成facebook登录，并打包成静态库
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-s.source_files = 'IFreePlayLoginSDK/Classes/**/*.{h,m}'
+  s.source_files = 'IFreePlayLoginSDK/**/*.h'
 
-  s.public_header_files = 'IFreePlayLoginSDK/Classes/**/*.h','IFreePlayLoginSDK/Classes/LineSDK.framework/**/*.h'
+  s.public_header_files = 'IFreePlayLoginSDK/**/*.h'
 
-  s.vendored_libraries  = 'IFreePlayLoginSDK/Classes/libWeChatSDK.a'
-  s.vendored_frameworks = 'IFreePlayLoginSDK/Classes/LineSDK.framework'
+  s.vendored_libraries  = 'IFreePlayLoginSDK/libWeChatSDK.a','IFreePlayLoginSDK/libLineSDK.a'
 
   s.libraries = 'c++', 'sqlite3', 'z'
   s.frameworks = 'UIKit', 'Foundation', 'Security','CoreTelephony', 'SystemConfiguration','CFNetwork'
@@ -30,5 +29,4 @@ s.source_files = 'IFreePlayLoginSDK/Classes/**/*.{h,m}'
   s.dependency 'FBSDKLoginKit'
   s.dependency 'FBSDKShareKit'
 
-    
 end
