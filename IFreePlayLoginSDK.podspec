@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IFreePlayLoginSDK'
-  s.version          = '1.2.1'
+  s.version          = '1.2.2'
   s.summary          = '集成facebook登录，并打包成静态库'
   s.description      = <<-DESC
    TODO:集成facebook登录，并打包成静态库
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/zhengyachao/IFreePlayLoginSDK'
   s.license          = 'MIT'
   s.author           = { 'zhengyachao' => '15038253754@163.com' }
-  s.source           = { :git => 'https://github.com/zhengyachao/IFreePlayLoginSDK.git', :tag => '1.2.1' }
+  s.source           = { :git => 'https://github.com/zhengyachao/IFreePlayLoginSDK.git', :tag => '1.2.2' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
