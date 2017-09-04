@@ -16,10 +16,10 @@
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "IFreePlayLoginSDK/**/*.{h,m}",
-  "public_header_files": "IFreePlayLoginSDK/**/*.h",
-  "vendored_libraries": "IFreePlayLoginSDK/libWeChatSDK.a",
-  "vendored_frameworks": "IFreePlayLoginSDK/LineSDK.framework",
+  "source_files": "IFreePlayLoginSDK/sources/**/*.{h,m}",
+  "public_header_files": "IFreePlayLoginSDK/sources/**/*.h",
+  "vendored_libraries": "IFreePlayLoginSDK/libs/libWeChatSDK.a",
+  "vendored_frameworks": "IFreePlayLoginSDK/libs/LineSDK.framework",
   "libraries": [
     "c++",
     "sqlite3",
