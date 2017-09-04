@@ -11,7 +11,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.25.0):
     - FBSDKCoreKit
-  - IFreePlayLoginSDK (1.0.4):
+  - IFreePlayLoginSDK (1.2.0):
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -28,7 +28,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 53e3f4bfb64e80c5f229dd30ae33ff57fbbbd2d1
   FBSDKLoginKit: f628c09684dae9c17f071cf90b014e886f5093ea
   FBSDKShareKit: aea699d3cac749af08e360f4e949b82ffa8813f5
-  IFreePlayLoginSDK: 6258edca266e3490a16a17e03edbf22697493113
+  IFreePlayLoginSDK: 1b39524fa3bcdeb34919cbfc646f5612e486664b
 
 PODFILE CHECKSUM: d82a2e35174f468df491992bb964611efbceedb6
 

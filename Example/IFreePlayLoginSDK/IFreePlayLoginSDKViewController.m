@@ -39,15 +39,12 @@
 
 - (IBAction)loginWechatButton:(UIButton *)sender {
     
-    [[YKSDKManager shareManager] loginWechatGetUserInfoVc:self
-                                                   GameId:@"1"
-                                                     Type:@"WECHAT"
-                                                  success:^(NSDictionary *data) {
-                                                      NSLog(@"打印微信的回调信息  ---  %@",data);
-                                                  }
-                                                  failure:^(NSError *error) {
-                                                      
-                                                  }];
+    [[YKSDKManager shareManager] loginFacebookVC:self GameId:@"1" Type:@"WECHAT" success:^(NSDictionary *data) {
+        
+        
+    } failure:^(NSError *error) {
+        
+    }];
 }
     
     

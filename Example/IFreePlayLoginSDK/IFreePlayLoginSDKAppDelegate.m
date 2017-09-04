@@ -7,15 +7,16 @@
 //
 
 #import "IFreePlayLoginSDKAppDelegate.h"
+#import <IFreePlayLoginSDK/YKSDKManager.h>
 
 @implementation IFreePlayLoginSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-//    [[YKSDKManager shareManager] initFaceBookSDKForApplication:application didFinishLaunchingWithOptions:launchOptions];
-//    
-//    [[YKSDKManager shareManager] registerAppForWechat:@"wx0bceb2176071ae4b"];
+//     Override point for customization after application launch.
+    [[YKSDKManager shareManager] initFaceBookSDKForApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
+    [[YKSDKManager shareManager] registerAppForWechat:@"wx0bceb2176071ae4b"];
     
     return YES;
 }

@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version          = '1.2.0'
   s.summary          = '集成facebook登录，并打包成静态库'
   s.description      = <<-DESC
-TODO:集成facebook登录，并打包成静态库
+   TODO:集成facebook登录，并打包成静态库
                        DESC
 
   s.homepage         = 'https://github.com/zhengyachao/IFreePlayLoginSDK'
@@ -16,11 +16,11 @@ TODO:集成facebook登录，并打包成静态库
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-s.source_files = 'IFreePlayLoginSDK/**/*.{h,m}'
-
+  s.source_files = 'IFreePlayLoginSDK/**/*.{h,m}'
   s.public_header_files = 'IFreePlayLoginSDK/**/*.h'
 
-  s.vendored_libraries  = 'IFreePlayLoginSDK/libWeChatSDK.a','IFreePlayLoginSDK/libLineSDK.a'
+  s.vendored_libraries  = 'IFreePlayLoginSDK/libWeChatSDK.a'
+  s.vendored_frameworks = 'IFreePlayLoginSDK/LineSDK.framework'
 
   s.libraries = 'c++', 'sqlite3', 'z'
   s.frameworks = 'UIKit', 'Foundation', 'Security','CoreTelephony', 'SystemConfiguration','CFNetwork'

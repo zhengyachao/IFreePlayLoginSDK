@@ -17,16 +17,19 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <LineSDK/LineSDKRequestProtocol.h>
 
-#import "LineSDKAPI.h"
-#import "LineSDKAccessToken.h"
-#import "LineSDKConfiguration.h"
-#import "LineSDKCredential.h"
-#import "LineSDKHTTPClient.h"
-#import "LineSDKLogin.h"
-#import "LineSDKProfile.h"
-#import "LineSDKRequestProtocol.h"
-#import "LineSDKVerifyResult.h"
-#import "NSError+LineSDK.h"
+@class LineSDKConfiguration;
+@class LineSDKAccessToken;
 
+NS_ASSUME_NONNULL_BEGIN
+@interface LineSDKHTTPClient : NSObject
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithConfiguration:(LineSDKConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
+- (void)sendWithRequest:(id<LineSDKRequestProtocol>)request
+             completion:(void(^)(NSDictionary * _Nullable data, NSHTTPURLResponse * _Nullable response, NSError * _Nullable error))completion;
+
+@end
+NS_ASSUME_NONNULL_END

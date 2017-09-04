@@ -18,7 +18,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LineSDKRequestProtocol.h"
+#import <LineSDK/LineSDKRequestProtocol.h>
 
 @class LineSDKConfiguration;
 @class LineSDKAccessToken;
